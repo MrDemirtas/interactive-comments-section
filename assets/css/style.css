@@ -191,13 +191,20 @@ h6 {
 }
 
 .add-comment {
+  display: grid;
+  grid-template-areas:
+    "textarea textarea"
+    "profile button";
+  gap: 16px;
+  align-items: start;
   padding: 16px;
-  background-color: #ffffff;
   margin-top: 16px;
+  background-color: #ffffff;
   margin-inline: 16px;
   border-radius: 8px;
 
   textarea {
+    grid-area: textarea;
     resize: none;
     width: 100%;
     min-height: 96px;
@@ -212,15 +219,10 @@ h6 {
   textarea:focus {
     border: 1px solid #5357b6;
   }
-}
-
-.send-button-area {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  align-items: center;
 
   button {
+    grid-area: button;
+    justify-self: end;
     background-color: #5357b6;
     color: #ffffff;
     padding: 12px 30px;
@@ -231,6 +233,11 @@ h6 {
 
   button:hover {
     background-color: #c5c6ef;
+  }
+
+  a {
+    justify-self: start;
+    grid-area: profile;
   }
 }
 
@@ -313,6 +320,8 @@ h6 {
   .add-comment {
     max-width: 730px;
     margin-inline: auto;
+    grid-template-areas: "profile textarea button";
+    grid-template-columns: max-content auto max-content;
   }
 
   .reply-card::before {
