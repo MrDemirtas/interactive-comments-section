@@ -318,6 +318,7 @@ h6 {
   }
 
   .add-comment {
+    padding: 24px;
     max-width: 730px;
     margin-inline: auto;
     grid-template-areas: "profile textarea button";
