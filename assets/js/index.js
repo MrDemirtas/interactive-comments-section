@@ -10,7 +10,7 @@ cancelBtn.addEventListener("click", () => (popup.style = "display: none"));
 let response;
 const getData = async () => (response = await fetch("assets/json/data.json").then((x) => x.json()));
 
-function changeScore(element, type, commentId, commentType) {
+function changeScore(type, commentId, commentType) {
   if (commentType == "comment") {
     type == "positive" ? response.comments[response.comments.findIndex((x) => x.id == commentId)].score++ : response.comments[response.comments.findIndex((x) => x.id == commentId)].score--;
   } else {
@@ -53,24 +53,26 @@ function deleteButtonHandle() {
 }
 
 function addComment() {
-  const { username, image } = response.currentUser;
-  const postJson = {
-    id: response.comments.length + 1,
-    content: textarea.value,
-    createdAt: "Now",
-    score: 0,
-    user: {
-      image: {
-        png: image.png,
-        webp: image.webp,
+  if (textarea.value.trim() != "") {
+    const { username, image } = response.currentUser;
+    const postJson = {
+      id: response.comments.length + 1,
+      content: textarea.value,
+      createdAt: "Now",
+      score: 0,
+      user: {
+        image: {
+          png: image.png,
+          webp: image.webp,
+        },
+        username: username,
       },
-      username: username,
-    },
-    replies: [],
-  };
-  response.comments.push(postJson);
-  textarea.value = "";
-  run();
+      replies: [],
+    };
+    response.comments.push(postJson);
+    textarea.value = "";
+    run();
+  }
 }
 
 submitButton.addEventListener("click", addComment);
@@ -209,11 +211,11 @@ function run() {
             </div>
             <div class="card-bottom-contents">
               <div class="card-buttons">
-                <button class="button-positive" onclick="changeScore(this.parentElement, 'positive', '${comment.id}', 'comment')">
+                <button class="button-positive" onclick="changeScore('positive', '${comment.id}', 'comment')">
                   <i class="fa-solid fa-plus"></i>
                 </button>
                 <span class="reaction-count">${comment.score}</span>
-                <button class="button-negative" onclick="changeScore(this.parentElement, 'negative', '${comment.id}', 'comment')">
+                <button class="button-negative" onclick="changeScore('negative', '${comment.id}', 'comment')">
                   <i class="fa-solid fa-minus"></i>
                 </button>
               </div>
@@ -240,11 +242,11 @@ function run() {
             </div>
             <div class="card-bottom-contents">
               <div class="card-buttons">
-                <button class="button-positive" onclick="changeScore(this.parentElement, 'positive', '{\`commentId\`: ${comment.id}, \`replyId\`: ${reply.id}}', 'reply')">
+                <button class="button-positive" onclick="changeScore('positive', '{\`commentId\`: ${comment.id}, \`replyId\`: ${reply.id}}', 'reply')">
                   <i class="fa-solid fa-plus"></i>
                 </button>
                 <span class="reaction-count">${reply.score}</span>
-                <button class="button-negative" onclick="changeScore(this.parentElement, 'negative', '{\`commentId\`: ${comment.id}, \`replyId\`: ${reply.id}}', 'reply')">
+                <button class="button-negative" onclick="changeScore('negative', '{\`commentId\`: ${comment.id}, \`replyId\`: ${reply.id}}', 'reply')">
                   <i class="fa-solid fa-minus"></i>
                 </button>
               </div>
