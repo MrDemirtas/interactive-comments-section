@@ -70,7 +70,7 @@ h6 {
 }
 
 .container {
-  width: 730px;
+  max-width: 730px;
   margin-inline: auto;
   padding-block: 32px;
 }
