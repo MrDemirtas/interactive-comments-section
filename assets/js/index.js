@@ -213,7 +213,7 @@ function run() {
                   <i class="fa-solid fa-plus"></i>
                 </button>
                 <span class="reaction-count">${comment.score}</span>
-                <button class="button-negative" onclick="changeScore(this.parentElement, 'negative', '${comment.id}') 'comment'">
+                <button class="button-negative" onclick="changeScore(this.parentElement, 'negative', '${comment.id}', 'comment')">
                   <i class="fa-solid fa-minus"></i>
                 </button>
               </div>
