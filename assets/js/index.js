@@ -52,7 +52,8 @@ function deleteButtonHandle() {
   }
 }
 
-function addComment() {
+function addComment(e) {
+  e.preventDefault();
   if (textarea.value.trim() != "") {
     const { username, image } = response.currentUser;
     const postJson = {
