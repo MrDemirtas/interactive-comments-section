@@ -8,52 +8,96 @@
   },
   "comments": [
     {
-      "id": 1,
-      "content": "Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.",
-      "createdAt": "1 month ago",
-      "score": 12,
+      "id": 6,
+      "content": "This is such a clean implementation! Have you considered adding animations for a more dynamic experience?",
+      "createdAt": "3 weeks ago",
+      "score": 8,
       "user": {
         "image": {
-          "png": "assets/img/avatar1.png",
-          "webp": "./images/avatars/image-amyrobson.webp"
+          "png": "assets/img/avatar3.png",
+          "webp": "./images/avatars/image-chrisjones.webp"
         },
-        "username": "amyrobson"
+        "username": "chrisjones"
       },
       "replies": []
     },
     {
-      "id": 2,
-      "content": "Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!",
-      "createdAt": "2 weeks ago",
-      "score": 5,
+      "id": 7,
+      "content": "Great project! I struggled with responsiveness at first. How did you approach handling multiple breakpoints?",
+      "createdAt": "1 month ago",
+      "score": 10,
       "user": {
         "image": {
-          "png": "assets/img/avatar2.png",
-          "webp": "./images/avatars/image-maxblagun.webp"
+          "png": "assets/img/avatar1.png",
+          "webp": "./images/avatars/image-lisakim.webp"
         },
-        "username": "maxblagun"
+        "username": "lisakim"
       },
       "replies": [
         {
-          "id": 3,
-          "content": "If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.",
-          "createdAt": "1 week ago",
-          "score": 4,
-          "replyingTo": "maxblagun",
+          "id": 1,
+          "content": "I mostly relied on CSS Grid and media queries. It's worth exploring those if you're not already using them!",
+          "createdAt": "2 weeks ago",
+          "score": 3,
+          "replyingTo": "lisakim",
           "user": {
             "image": {
-              "png": "assets/img/avatar3.png",
-              "webp": "./images/avatars/image-ramsesmiron.webp"
+              "png": "assets/img/avatar2.png",
+              "webp": "./images/avatars/image-michaelscott.webp"
             },
-            "username": "ramsesmiron"
+            "username": "michaelscott"
           }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "content": "Fantastic work! How do you manage state in your project? Are you using something like Redux or React Context?",
+      "createdAt": "2 weeks ago",
+      "score": 7,
+      "user": {
+        "image": {
+          "png": "assets/img/avatar3.png",
+          "webp": "./images/avatars/image-sarawright.webp"
         },
+        "username": "sarawright"
+      },
+      "replies": [
         {
-          "id": 4,
-          "content": "I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.",
-          "createdAt": "2 days ago",
+          "id": 1,
+          "content": "I’m using React Context for now. It's lightweight and fits my project's needs. Redux might be overkill for smaller apps.",
+          "createdAt": "5 days ago",
           "score": 2,
-          "replyingTo": "ramsesmiron",
+          "replyingTo": "sarawright",
+          "user": {
+            "image": {
+              "png": "assets/img/avatar4.png",
+              "webp": "./images/avatars/image-juliusomo.webp"
+            },
+            "username": "juliusomo"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "content": "Awesome job! Did you encounter any challenges while integrating the drag-and-drop feature?",
+      "createdAt": "3 weeks ago",
+      "score": 9,
+      "user": {
+        "image": {
+          "png": "assets/img/avatar1.png",
+          "webp": "./images/avatars/image-davidsmith.webp"
+        },
+        "username": "davidsmith"
+      },
+      "replies": [
+        {
+          "id": 1,
+          "content": "Yes, I had to tweak the logic for smoother interactions on touch devices. Custom event listeners really helped.",
+          "createdAt": "6 days ago",
+          "score": 4,
+          "replyingTo": "davidsmith",
           "user": {
             "image": {
               "png": "assets/img/avatar4.png",

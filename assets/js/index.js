@@ -152,7 +152,7 @@ function replyButtonHandle() {
       const replyTo = response.comments.find((x) => x.id == commentId).user.username;
 
       const postJson = {
-        id: response.comments.find((x) => x.id == commentId).replies.length,
+        id: response.comments.find((x) => x.id == commentId).replies.length + 1,
         content: `@${replyTo} ` + commentReplyText,
         createdAt: "Now",
         score: 0,
@@ -177,7 +177,7 @@ function replyButtonHandle() {
       const { commentId, replyId } = JSON.parse(this.getAttribute("data-id"));
       const replyTo = response.comments.find((x) => x.id == commentId).replies.find((x) => x.id == replyId).user.username;
       const postJson = {
-        id: response.comments.find((x) => x.id == commentId).replies.length,
+        id: response.comments.find((x) => x.id == commentId).replies.length + 1,
         content: `@${replyTo} ` + commentReplyText,
         createdAt: "Now",
         score: 0,
