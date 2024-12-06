@@ -8,9 +8,9 @@
   },
   "comments": [
     {
-      "id": 6,
-      "content": "This is such a clean implementation! Have you considered adding animations for a more dynamic experience?",
-      "createdAt": "3 weeks ago",
+      "id": 1,
+      "content": "Bu gerçekten temiz bir uygulama olmuş! Daha dinamik bir deneyim için animasyon eklemeyi düşündünüz mü?",
+      "createdAt": "3 hafta önce",
       "score": 8,
       "user": {
         "image": {
@@ -22,9 +22,9 @@
       "replies": []
     },
     {
-      "id": 7,
-      "content": "Great project! I struggled with responsiveness at first. How did you approach handling multiple breakpoints?",
-      "createdAt": "1 month ago",
+      "id": 2,
+      "content": "Harika bir proje! Ben başta duyarlılık sorunları yaşadım. Birden fazla breakpoint ile nasıl başa çıktınız?",
+      "createdAt": "1 ay önce",
       "score": 10,
       "user": {
         "image": {
@@ -36,8 +36,8 @@
       "replies": [
         {
           "id": 1,
-          "content": "I mostly relied on CSS Grid and media queries. It's worth exploring those if you're not already using them!",
-          "createdAt": "2 weeks ago",
+          "content": "Genelde CSS Grid ve medya sorgularını kullandım. Henüz denemediyseniz, bunları keşfetmeye değer!",
+          "createdAt": "2 hafta önce",
           "score": 3,
           "replyingTo": "lisakim",
           "user": {
@@ -51,9 +51,9 @@
       ]
     },
     {
-      "id": 8,
-      "content": "Fantastic work! How do you manage state in your project? Are you using something like Redux or React Context?",
-      "createdAt": "2 weeks ago",
+      "id": 3,
+      "content": "Muhteşem bir çalışma! Projenizde durumu nasıl yönetiyorsunuz? Redux ya da React Context gibi bir şey mi kullanıyorsunuz?",
+      "createdAt": "2 hafta önce",
       "score": 7,
       "user": {
         "image": {
@@ -65,8 +65,8 @@
       "replies": [
         {
           "id": 1,
-          "content": "I’m using React Context for now. It's lightweight and fits my project's needs. Redux might be overkill for smaller apps.",
-          "createdAt": "5 days ago",
+          "content": "Şimdilik React Context kullanıyorum. Hafif ve projemin ihtiyaçlarını karşılıyor. Küçük uygulamalar için Redux fazla gelebilir.",
+          "createdAt": "5 gün önce",
           "score": 2,
           "replyingTo": "sarawright",
           "user": {
@@ -80,9 +80,9 @@
       ]
     },
     {
-      "id": 9,
-      "content": "Awesome job! Did you encounter any challenges while integrating the drag-and-drop feature?",
-      "createdAt": "3 weeks ago",
+      "id": 4,
+      "content": "Harika iş çıkarmışsınız! Sürükle-bırak özelliğini entegre ederken herhangi bir zorlukla karşılaştınız mı?",
+      "createdAt": "3 hafta önce",
       "score": 9,
       "user": {
         "image": {
@@ -94,8 +94,8 @@
       "replies": [
         {
           "id": 1,
-          "content": "Yes, I had to tweak the logic for smoother interactions on touch devices. Custom event listeners really helped.",
-          "createdAt": "6 days ago",
+          "content": "Evet, dokunmatik cihazlarda daha akıcı bir etkileşim için mantığı biraz değiştirmem gerekti. Özel olay dinleyicileri gerçekten işe yaradı.",
+          "createdAt": "6 gün önce",
           "score": 4,
           "replyingTo": "davidsmith",
           "user": {
