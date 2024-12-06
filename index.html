@@ -16,12 +16,22 @@
       <div class="contents"></div>
 
       <div class="add-comment">
-        <textarea placeholder="Add a comment…"></textarea>
+        <textarea placeholder="Add a comment…" class="textarea"></textarea>
         <a href="#"><img src="./assets/img/avatar4.png" /></a>
-        <button>Send</button>
+        <button class="submitButton">Send</button>
       </div>
     </div>
 
+    <div class="pop-up">
+      <div class="alertMsgContent">
+        <h2>Delete comment</h2>
+        <p>Are you sure you want to delete this comment? This will remove the comment and can’t be undone.</p>
+        <div class="alertButtons">
+          <button class="cancelBtn">NO, CANCEL</button>
+          <button class="deleteBtn">YES, DELETE</button>
+        </div>
+      </div>
+    </div>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>
