@@ -8,7 +8,14 @@ const deleteBtn = document.querySelector(".deleteBtn");
 cancelBtn.addEventListener("click", () => (popup.style = "display: none"));
 
 let response;
-const getData = async () => (response = await fetch("assets/json/data.json").then((x) => x.json()));
+const getData = async () => {
+  if (localStorage.getItem("comments") == null) {
+    response = await fetch("assets/json/data.json").then((x) => x.json());
+    localStorage.setItem("comments", JSON.stringify(response));
+  } else {
+    response = JSON.parse(localStorage.getItem("comments"));
+  }
+};
 
 function changeScore(type, commentId, commentType) {
   if (commentType == "comment") {
@@ -276,6 +283,8 @@ function run() {
   deleteButtons.forEach((deleteButton) => {
     deleteButton.addEventListener("click", deleteButtonHandle);
   });
+
+  localStorage.setItem("comments", JSON.stringify(response));
 }
 
 getData().then(() => run());
